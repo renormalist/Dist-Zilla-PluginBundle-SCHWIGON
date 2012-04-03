@@ -1,0 +1,5 @@
+.*
+!.gitignore
+Dist-Zilla-PluginBundle-SCHWIGON-*
+Debian_CPANTS.txt
+
