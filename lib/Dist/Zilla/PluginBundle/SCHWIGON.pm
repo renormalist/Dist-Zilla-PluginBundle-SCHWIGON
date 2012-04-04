@@ -388,7 +388,7 @@ method configure {
 
     $self->add_plugins('NextRelease');
 
-    $self->add_plugins(['Git::CheckFor::CorrectBranch' => { release_branch => 'wrong_master' }]);
+    $self->add_plugins(['Git::CheckFor::CorrectBranch' => { release_branch => 'master' }]);
 
     $self->add_plugins('Git::CheckFor::Fixups');
 
