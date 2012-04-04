@@ -20,6 +20,7 @@ In dist.ini:
   dist = Distribution-Name
   repository_at = github
   ; static_version = 7.89
+  ; release_branch = public-releases
 
 =head1 DESCRIPTION
 
@@ -117,6 +118,12 @@ has static_version => (
     is        => 'ro',
     isa       => Str,
     predicate => 'has_static_version',
+);
+
+has release_branch => (
+    is        => 'ro',
+    isa       => Str,
+    predicate => 'has_release_branch',
 );
 
 has disable_pod_coverage_tests => (
@@ -389,7 +396,11 @@ method configure {
 
     $self->add_plugins('NextRelease');
 
-    $self->add_plugins(['Git::CheckFor::CorrectBranch' => { release_branch => 'master' }]);
+    $self->add_plugins(['Git::CheckFor::CorrectBranch' =>
+                        { release_branch => ($self->has_release_branch
+                                             ? $self->release_branch
+                                             : 'master')
+                        }]);
 
     if ($self->has_static_version) {
             $self->add_plugins(['StaticVersion' => { version => $self->static_version }]);
