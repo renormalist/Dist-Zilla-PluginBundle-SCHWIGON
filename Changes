@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - configurable release branch
 
 0.004     2012-04-04 11:46:12 Europe/Berlin
         - Changes file
