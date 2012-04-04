@@ -2,6 +2,8 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
         - configurable release branch
+        - no more CheckFor::Fixup as this doesn't know other tag
+          formats
 
 0.004     2012-04-04 11:46:12 Europe/Berlin
         - Changes file

@@ -64,7 +64,6 @@ It is roughly equivalent to:
   # if static_version
     [StaticVersion]
   # else
-    [Git::CheckFor::Fixups]
     [Git::NextVersion]
 
   [@Git]
@@ -405,7 +404,6 @@ method configure {
     if ($self->has_static_version) {
             $self->add_plugins(['StaticVersion' => { version => $self->static_version }]);
     } else {
-            $self->add_plugins('Git::CheckFor::Fixups');
             $self->add_plugins('Git::NextVersion');
     }
 
