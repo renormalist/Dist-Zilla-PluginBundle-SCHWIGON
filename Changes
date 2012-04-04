@@ -1,0 +1,10 @@
+Revision history for {{$dist->name}}
+
+{{$NEXT}}
+        - Changes file
+
+0.003     2012-04-04 10:30:27 Europe/Berlin
+        - add sensible git and version handling
+
+0.001     2012-04-03 17:39:27 Europe/Berlin
+        - initial plugin bundle roughly based on FLORA
