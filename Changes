@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.005     2012-04-04 12:51:00 Europe/Berlin
         - configurable release branch
         - no more CheckFor::Fixup as this doesn't know other tag
           formats
