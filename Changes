@@ -1,17 +1,19 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - NextRelease.{{$NEXT}} more CPAN::Changes::Spec conform
+        - add [CheckChangesHasContent]
 
-0.005     2012-04-04 12:51:00 Europe/Berlin
+0.005     2012-04-04
         - configurable release branch
         - no more CheckFor::Fixup as this doesn't know other tag
           formats
 
-0.004     2012-04-04 11:46:12 Europe/Berlin
+0.004     2012-04-04
         - Changes file
 
-0.003     2012-04-04 10:30:27 Europe/Berlin
+0.003     2012-04-04
         - add sensible git and version handling
 
-0.001     2012-04-03 17:39:27 Europe/Berlin
+0.001     2012-04-03
         - initial plugin bundle roughly based on FLORA
