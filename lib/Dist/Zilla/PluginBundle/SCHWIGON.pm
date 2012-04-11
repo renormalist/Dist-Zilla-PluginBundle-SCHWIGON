@@ -58,6 +58,8 @@ It is roughly equivalent to:
 
   [NextRelease]
 
+  [CheckChangesHasContent]
+
   [Git::CheckFor::CorrectBranch]
   release_branch = master
 
@@ -392,6 +394,8 @@ method configure {
     $self->add_plugins('AutoPrereqs') if $self->auto_prereqs;
 
     # roughly from here we diverge from FLORA
+
+    $self->add_plugins('CheckChangesHasContent');
 
     $self->add_plugins(['NextRelease' =>
                        { format => '%-9v %{yyyy-MM-dd}d' }]);
