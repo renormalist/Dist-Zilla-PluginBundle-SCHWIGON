@@ -393,7 +393,8 @@ method configure {
 
     # roughly from here we diverge from FLORA
 
-    $self->add_plugins('NextRelease');
+    $self->add_plugins(['NextRelease' =>
+                       { format => '%-9v %{yyyy-MM-dd}d' }]);
 
     $self->add_plugins(['Git::CheckFor::CorrectBranch' =>
                         { release_branch => ($self->has_release_branch
