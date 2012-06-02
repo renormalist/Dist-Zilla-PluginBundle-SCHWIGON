@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+	- fix a 'Odd number of elements in anonymous hash' in eol tests
 
 0.006     2012-04-11
         - NextRelease.{{$NEXT}} more CPAN::Changes::Spec conform

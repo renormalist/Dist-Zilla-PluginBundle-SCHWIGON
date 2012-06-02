@@ -379,7 +379,7 @@ method configure {
             do_metadata => 1,
         }],
         [EOLTests => {
-            trailing_whitespace => !$self->disable_trailing_whitespace_tests,
+            trailing_whitespace => $self->disable_trailing_whitespace_tests ? 0 : 1,
         }],
     );
 
