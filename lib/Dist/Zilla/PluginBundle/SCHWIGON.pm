@@ -55,6 +55,7 @@ It is roughly equivalent to:
   config_plugin = @SCHWIGON
 
   [AutoPrereqs]
+  [Git::Describe]
 
   [NextRelease]
 
@@ -395,6 +396,7 @@ method configure {
 
     # roughly from here we diverge from FLORA
 
+    $self->add_plugins('Git::Describe');
     $self->add_plugins('CheckChangesHasContent');
 
     $self->add_plugins(['NextRelease' =>
