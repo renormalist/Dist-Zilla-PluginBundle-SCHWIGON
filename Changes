@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.008     2012-06-07
         - add [Git::Describe]
 
 0.007     2012-06-03
