@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - explicitely declare more deps
 
 0.008     2012-06-07
         - add [Git::Describe]
