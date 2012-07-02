@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.009     2012-07-02
         - explicitely declare more deps
 
 0.008     2012-06-07
