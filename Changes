@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.010     2012-07-05
         - new option "disable_tab_tests"
 
 0.009     2012-07-02
