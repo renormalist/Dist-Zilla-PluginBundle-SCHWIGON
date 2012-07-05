@@ -140,6 +140,12 @@ has disable_trailing_whitespace_tests => (
     default => 0,
 );
 
+has disable_tab_tests => (
+    is      => 'ro',
+    isa     => Bool,
+    default => 0,
+);
+
 has bugtracker_url => (
     isa     => Uri,
     coerce  => 1,
@@ -360,8 +366,10 @@ method configure {
         MetaJSON
         PkgVersion
         PodSyntaxTests
-        NoTabsTests
     ));
+
+    $self->add_plugins('NoTabsTests')
+        unless $self->disable_tab_tests;
 
     $self->add_plugins('PodCoverageTests')
         unless $self->disable_pod_coverage_tests;
