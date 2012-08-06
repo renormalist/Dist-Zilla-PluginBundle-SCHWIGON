@@ -55,6 +55,7 @@ It is roughly equivalent to:
   config_plugin = @SCHWIGON
 
   [AutoPrereqs]
+  [Git::Describe]
 
   [NextRelease]
 
@@ -134,6 +135,12 @@ has disable_pod_coverage_tests => (
 );
 
 has disable_trailing_whitespace_tests => (
+    is      => 'ro',
+    isa     => Bool,
+    default => 0,
+);
+
+has disable_tab_tests => (
     is      => 'ro',
     isa     => Bool,
     default => 0,
@@ -359,8 +366,10 @@ method configure {
         MetaJSON
         PkgVersion
         PodSyntaxTests
-        NoTabsTests
     ));
+
+    $self->add_plugins('NoTabsTests')
+        unless $self->disable_tab_tests;
 
     $self->add_plugins('PodCoverageTests')
         unless $self->disable_pod_coverage_tests;
@@ -379,7 +388,7 @@ method configure {
             do_metadata => 1,
         }],
         [EOLTests => {
-            trailing_whitespace => !$self->disable_trailing_whitespace_tests,
+            trailing_whitespace => $self->disable_trailing_whitespace_tests ? 0 : 1,
         }],
     );
 
@@ -395,6 +404,7 @@ method configure {
 
     # roughly from here we diverge from FLORA
 
+    $self->add_plugins('Git::Describe');
     $self->add_plugins('CheckChangesHasContent');
 
     $self->add_plugins(['NextRelease' =>

@@ -3,6 +3,18 @@ Revision history for {{$dist->name}}
 {{$NEXT}}
         - more deps declared
 
+0.010     2012-07-05
+        - new option "disable_tab_tests"
+
+0.009     2012-07-02
+        - explicitely declare more deps
+
+0.008     2012-06-07
+        - add [Git::Describe]
+
+0.007     2012-06-03
+        - fix a 'Odd number of elements in anonymous hash' in eol tests
+
 0.006     2012-04-11
         - NextRelease.{{$NEXT}} more CPAN::Changes::Spec conform
         - add [CheckChangesHasContent]
