@@ -36,7 +36,7 @@ It is roughly equivalent to:
   [PkgVersion]
   [PodSyntaxTests]
   [PodCoverageTests]
-  [NoTabsTests]
+  [Test::NoTabs]
   [EOLTests]
 
   [MetaResources]
@@ -368,7 +368,7 @@ method configure {
         PodSyntaxTests
     ));
 
-    $self->add_plugins('NoTabsTests')
+    $self->add_plugins('Test::NoTabs')
         unless $self->disable_tab_tests;
 
     $self->add_plugins('PodCoverageTests')
