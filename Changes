@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - Replace NoTabsTest with Test::NoTabs (kentnl, GH#1)
 
 0.012     2012-12-05
         - more prereqs
