@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - dependencies cleanup
 
 0.013     2015-09-08
         - Replace NoTabsTest with Test::NoTabs (kentnl, GH#1)
