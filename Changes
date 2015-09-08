@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.013     2015-09-08
         - Replace NoTabsTest with Test::NoTabs (kentnl, GH#1)
         - Replace [PodCoverageTests] with [Test::Pod::Coverage::Configurable],
           now allowing an additional regex which modules to skip:
