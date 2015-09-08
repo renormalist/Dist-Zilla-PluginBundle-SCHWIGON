@@ -19,8 +19,6 @@ In dist.ini:
   [@SCHWIGON]
   dist = Distribution-Name
   repository_at = github
-  ; static_version = 7.89
-  ; release_branch = public-releases
 
 =head1 DESCRIPTION
 
@@ -37,7 +35,7 @@ It is roughly equivalent to:
   [PodSyntaxTests]
   [PodCoverageTests]
   [Test::NoTabs]
-  [EOLTests]
+  [Test::EOL]
 
   [MetaResources]
   repository.type   = git
@@ -57,9 +55,9 @@ It is roughly equivalent to:
   [AutoPrereqs]
   [Git::Describe]
 
-  [NextRelease]
-
   [CheckChangesHasContent]
+
+  [NextRelease]
 
   [Git::CheckFor::CorrectBranch]
   release_branch = master
@@ -387,7 +385,7 @@ method configure {
             authority   => $self->authority,
             do_metadata => 1,
         }],
-        [EOLTests => {
+        ['Test::EOL' => {
             trailing_whitespace => $self->disable_trailing_whitespace_tests ? 0 : 1,
         }],
     );
