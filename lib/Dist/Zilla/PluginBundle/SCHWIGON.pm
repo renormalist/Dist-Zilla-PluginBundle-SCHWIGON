@@ -185,6 +185,16 @@ has homepage_url => (
     },
 );
 
+has skip_pod_modules => (
+    is      => 'ro',
+    isa     => Str,
+    lazy    => 1,
+    default => '',
+    handles => {
+        skip => 'as_string',
+    },
+);
+
 method _build_homepage_url {
     return sprintf $self->_cpansearch_pattern, $self->dist;
 }
@@ -369,7 +379,10 @@ method configure {
     $self->add_plugins('Test::NoTabs')
         unless $self->disable_tab_tests;
 
-    $self->add_plugins('PodCoverageTests')
+    $self->add_plugins(
+        ['Test::Pod::Coverage::Configurable' => {
+            'skip'          => $self->skip_pod_modules,
+         }])
         unless $self->disable_pod_coverage_tests;
 
     $self->add_plugins(
