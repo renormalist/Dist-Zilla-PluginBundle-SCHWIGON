@@ -374,6 +374,7 @@ method configure {
         MetaJSON
         PkgVersion
         PodSyntaxTests
+        Test::Compile
     ));
 
     $self->add_plugins('Test::NoTabs')
