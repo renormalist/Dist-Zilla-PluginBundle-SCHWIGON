@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.016     2015-09-24
         - option 'test_compile_skip': regex what Test::Compile skips
 
 0.015     2015-09-23
