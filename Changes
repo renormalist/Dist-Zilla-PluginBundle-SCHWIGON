@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - Kwalitee improvements: +[MetaProvides::Class], minimum Perl version
 
 0.016     2015-09-24
         - option 'test_compile_skip': regex what Test::Compile skips
