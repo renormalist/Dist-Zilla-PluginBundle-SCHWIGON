@@ -3,6 +3,7 @@ package Dist::Zilla::PluginBundle::SCHWIGON;
 
 # (well actually like FLORA - as it is shamelessly stolen)
 
+use 5.008;
 use Moose 1.00;
 use Method::Signatures::Simple;
 use Moose::Util::TypeConstraints;
