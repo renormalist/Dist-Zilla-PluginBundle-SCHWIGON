@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.017     2015-09-28
         - Kwalitee improvements: +[MetaProvides::Class], minimum Perl version
 
 0.016     2015-09-24
