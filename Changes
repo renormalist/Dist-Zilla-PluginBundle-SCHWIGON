@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - fix META freakup: replace [MetaProvides::Class] with [MetaProvides::Package]
 
 0.017     2015-09-28
         - Kwalitee improvements: +[MetaProvides::Class], minimum Perl version
