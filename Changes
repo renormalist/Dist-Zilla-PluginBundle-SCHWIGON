@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.018     2016-01-08
         - fix META freakup: replace [MetaProvides::Class] with [MetaProvides::Package]
         - added DZP::Test::Compile author dependency to fix 'listdeps' [Mark Gardner]
 
