@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - added Dist::Zilla::Plugin::MetaProvides::Package
 
 0.018     2016-01-08
         - fix META freakup: replace [MetaProvides::Class] with [MetaProvides::Package]
