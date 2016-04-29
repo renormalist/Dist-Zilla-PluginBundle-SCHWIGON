@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.019     2016-04-29
         - added Dist::Zilla::Plugin::MetaProvides::Package
         - turn Dist::Zilla::Plugin::Test::Compile into normal dependency
 
