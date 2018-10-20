@@ -32,6 +32,7 @@ It is roughly equivalent to:
 
   [MetaConfig]
   [MetaJSON]
+  [MetaProvides::Package]
   [PkgVersion]
   [PodSyntaxTests]
   [PodCoverageTests]
