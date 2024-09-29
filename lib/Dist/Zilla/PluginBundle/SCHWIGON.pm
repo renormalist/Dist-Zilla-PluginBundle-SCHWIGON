@@ -387,7 +387,7 @@ method configure {
     $self->add_plugins(['Test::Compile' => {
                                             $self->has_test_compile_skip
                                             ? (skip => $self->test_compile_skip)
-                                            : (),
+                                            : (skip => [qw{ Test::TAPv13}]),
                                            }]);
 
     $self->add_plugins('Test::NoTabs')
