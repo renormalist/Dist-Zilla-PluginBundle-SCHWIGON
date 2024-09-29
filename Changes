@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - skip compile testing on own difficult module Test::TAPv13
+        - mention MetaProvides::Package in pod
+        - re-upload after rebase struggle
 
 0.020     2024-09-29
         - skip compile testing on own difficult module Test::TAPv13
